@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Sorting</title>
+  </head>
+  <script>
+    let data = [58, 42, 14, 37];
+    for (let i = 0; i < data.length; i++) {
+      for (let j = 0; j < data.length; j++) {
+        // console.log(data) --To check , how swapping occured..
+        if (data[j] > data[j + 1]) {
+          let temp = data[j];
+          data[j] = data[j + 1]; 
+          data[j + 1] = temp;
+        }
+      }
+    }
+    console.log(data);
+
+    // Using JS inbuilt sort function:
+    // let sorting=data.sort((a,b)=>{
+    //     return a-b;
+    // })
+    // console.log(sorting)
+  </script>
+  <body></body>
+</html>

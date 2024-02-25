@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Check Anagram</title>
+</head>
+<script>
+    // let str1="Mary";
+    // let str2="Army";
+
+    function checkAnagram(str1,str2){
+        let lower1=str1.toLocaleLowerCase();
+        let lower2=str2.toLocaleLowerCase();
+        // console.log(lower1)
+        let arr1=lower1.split('').sort().join('');
+        let arr2=lower2.split('').sort().join('');
+        if(arr1==arr2){
+            console.log("Strings are Anagram")
+        }else{
+            console.log("Strings are not Anagram")
+        }
+    }
+    checkAnagram("Mary","Army");
+</script>
+<body>
+    
+</body>
+</html>

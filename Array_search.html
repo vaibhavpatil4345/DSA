@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script>
+    let arr=[10,30,50,45,80,60,90];
+    let ele=80;
+    let index=undefined;
+
+    // for(let i=0;i<arr.length;i++){
+    //     // console.log(arr[i])
+    //     if(arr[i]===ele){
+    //         // console.log("Element matched at index ", i)
+    //         index=i;
+    //         console.log(index);
+    //         break;
+    //     }
+    // }
+
+
+
+    // function getPosition(){
+    //     let ele=document.getElementById("inputBox").value;
+    //     let index=0;
+    //     for(let i=0;i<arr.length;i++){
+    //     // console.log(arr[i])
+    //     if(arr[i]==ele){
+    //         // console.log("Element matched at index ", i)
+    //         index=i;
+    //         console.log(index);
+    //         break;
+    //     }
+    // }
+    
+    // }
+
+    console.log(arr.indexOf(ele))
+</script>
+<body>
+    <input type="text" placeholder="enter element to find" id="inputBox">
+    <button onclick="getPosition()">get position</button>
+    
+</body>
+</html>

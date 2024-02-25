@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stack</title>
+</head>
+<script>
+
+    // Push Method:
+    let data=[];
+    let currentSize=data.length;
+    let maxSize=5;
+
+    function push(x){
+        if(currentSize>=maxSize){
+            alert("Stack is full and you cannot add"+x)
+        }
+        data[currentSize]=x;
+        currentSize++; 
+    }
+    push(10)
+    push(20)
+    push(30)
+    push(40)
+    push(50)
+    // push(60)
+    // push(70)
+    console.log(data)
+
+    // Pop Method();
+    function pop(){
+        if(currentSize>0){
+            currentSize--;
+        data.length=currentSize;
+        }else{
+            alert("Stack is already empty")
+        }
+    }
+    pop();
+    pop();
+    pop();
+
+    console.log(data)
+
+</script>
+<body>
+    
+</body>
+</html>

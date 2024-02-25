@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array insertion</title>
+  </head>
+  <script>
+    let data=[10,20,30,40,50,60,70];
+    let NewEle=444;
+    let position=4;
+
+    for(let i=data.length-1;i>=0;i--){
+        // console.log(data[i])
+        if(i>=position){
+            data[i+1]=data[i];
+            if(i==position){
+                data[i]=NewEle;
+            }
+        }
+
+    }
+    console.log(data)
+
+    // Dynamic number addition:
+    // function addNum() {
+    //   let data = [10, 20, 30, 40, 50, 60, 70];
+    //   let NewEle = document.getElementById('NewNumBox').value;
+    //   NewEle=parseInt(NewEle)
+    //   let position = document.getElementById('positionBox').value;
+
+    //   for (let i = data.length - 1; i >= 0; i--) {
+    //     // console.log(data[i])
+    //     if (i >= position) {
+    //       data[i + 1] = data[i];
+    //       if (i == position) {
+    //         data[i] = NewEle;
+    //       }
+    //     }
+    //   }
+    //   console.log(data);
+    // }
+  </script>
+  <body>
+    <input type="text" placeholder="Enter position " id="positionBox" />
+    <input type="text " placeholder="Enter Number to add" id="NewNumBox" />
+    <button onclick="addNum()">Add Number</button>
+  </body>
+</html>
